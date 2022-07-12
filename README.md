@@ -21,4 +21,7 @@ sudo insmod arp-guard.ko
 ### Test
 ```bash
 $ dmesg | tail -5
-
+```
+### Uninstall
+```bash
+sudo rmmod arp-guard
