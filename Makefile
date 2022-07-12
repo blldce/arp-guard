@@ -1,4 +1,4 @@
-MODULE=arp-guard
+MODULE=arpguard
 PWD := $(shell pwd)
 KERNELRELEASE := $(shell uname -r)
 KDIR := /lib/modules/${KERNELRELEASE}/build
@@ -11,10 +11,10 @@ all:
 	rm -rf *.mod.c .*.cmd *.symvers *.o
 
 install:
-	sudo insmod arp-guard.ko
+	sudo insmod arpguard.ko
 
 remove:
-	sudo rmmod arp-guard.ko
+	sudo rmmod arpguard.ko
 	
 clean:
 	make -C  ${KDIR} M=${PWD} clean
