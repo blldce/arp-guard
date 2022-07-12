@@ -16,7 +16,7 @@ make
 ```
 ### Install
 ```bash
-sudo insmod arp-guard.ko
+sudo insmod arpguard.ko
 ```
 ### Test
 ```bash
@@ -24,4 +24,4 @@ $ dmesg | tail -5
 ```
 ### Uninstall
 ```bash
-sudo rmmod arp-guard
+sudo rmmod arpguard
